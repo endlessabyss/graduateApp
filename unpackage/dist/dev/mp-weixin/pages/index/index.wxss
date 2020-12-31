@@ -1,0 +1,53 @@
+.app .content.data-v-57280228 {
+  width: 100%;
+  height: 400rpx;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 100%;
+  background-image: url(/static/img/iu.jpg);
+}
+.app .content .text-search.data-v-57280228 {
+  margin: 30rpx;
+}
+.app .content .text-search .search.data-v-57280228 {
+  position: relative;
+}
+.app .content .text-search .search .icon-map.data-v-57280228 {
+  position: absolute;
+  right: 60rpx;
+  top: 15rpx;
+}
+.app .wrap .item-action.data-v-57280228 {
+  text-align: center;
+}
+.app .wrap .item-action image.data-v-57280228 {
+  width: 80rpx;
+  height: 80rpx;
+  padding: 50rpx;
+  padding-bottom: 0;
+}
+.app .wrap .item-action .text-action.data-v-57280228 {
+  font-size: 20rpx;
+  text-align: center;
+}
+.app .look-house.data-v-57280228 {
+  padding: 50rpx;
+}
+.app .look-house .title.data-v-57280228 {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.app .look-house .look-detail.data-v-57280228 {
+  padding: 50rpx;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 200rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  border: 5rpx solid #f0f0f0;
+  background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fa0.att.hudong.com%2F52%2F62%2F31300542679117141195629117826.jpg&refer=http%3A%2F%2Fa0.att.hudong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611476672&t=b3edeeddbeb70de4f0496d28758f8065');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: red;
+}
+

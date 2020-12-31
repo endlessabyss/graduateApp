@@ -1,0 +1,36 @@
+.item-list .item .item-right.data-v-70a76924 {
+  padding: 0 20rpx;
+}
+.item-list .item .item-right .item-child.data-v-70a76924 {
+  margin-top: 5rpx;
+}
+.item-list .item .item-right .item-child.data-v-70a76924:nth-child(1) {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.item-list .item .item-right .item-child.data-v-70a76924:nth-child(2) {
+  font-size: 20rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.item-list .item .item-right .item-child:nth-child(3) text.data-v-70a76924 {
+  margin: 10rpx;
+  font-size: 10rpx;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
+  display: inline-block;
+  color: #869BAF;
+  background-color: #E5EAED;
+}
+.item-list .item .item-right .item-child:nth-child(4) text.data-v-70a76924:nth-child(1) {
+  color: red;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.item-list .item .item-right .item-child:nth-child(4) text.data-v-70a76924:nth-child(2) {
+  color: #ADADAD;
+  margin-left: 6rpx;
+  font-size: 20rpx;
+}
+

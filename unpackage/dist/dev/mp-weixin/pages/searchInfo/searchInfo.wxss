@@ -1,0 +1,20 @@
+.active.data-v-63f3c986 {
+  background-color: blue;
+}
+.search.data-v-63f3c986 {
+  padding: 30rpx;
+}
+.search .search-type .price-list .price-item button.data-v-63f3c986 {
+  font-size: 20rpx;
+  background-color: #F8F8F8;
+}
+.search .search-type .price-list .price-item .active.data-v-63f3c986 {
+  color: #3072F6;
+  font-size: 30rpx;
+  font-weight: bold;
+  background-color: #EAF1FE;
+}
+.search .search-result.data-v-63f3c986 {
+  padding-top: 30rpx;
+}
+

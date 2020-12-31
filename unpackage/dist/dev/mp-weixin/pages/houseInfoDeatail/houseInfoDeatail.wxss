@@ -1,0 +1,14 @@
+.house-info .house-main.data-v-cabbe474 {
+  padding: 30rpx;
+}
+.house-info .house-main view.data-v-cabbe474 {
+  padding: 5rpx;
+}
+.house-info .house-main .house-title text.data-v-cabbe474 {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.house-info .house-main .house-title text.data-v-cabbe474:nth-child(n+1) {
+  margin-left: 20rpx;
+}
+

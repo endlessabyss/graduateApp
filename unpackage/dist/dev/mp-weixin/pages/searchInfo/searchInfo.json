@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "搜索中心",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-dropdown": "/uview-ui/components/u-dropdown/u-dropdown",
+    "u-dropdown-item": "/uview-ui/components/u-dropdown-item/u-dropdown-item",
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "u-row": "/uview-ui/components/u-row/u-row",
+    "u-col": "/uview-ui/components/u-col/u-col",
+    "u-input": "/uview-ui/components/u-input/u-input",
+    "item-list": "/components/ItemList/ItemList"
+  }
+}
