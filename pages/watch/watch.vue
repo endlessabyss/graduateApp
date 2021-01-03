@@ -1,17 +1,40 @@
 <template>
 	<view>
-		<view>
-			<u-tabs-swiper ref="uTabs" :list="list" :current="current" @change="tabsChange" :is-scroll="false" swiperWidth="750"></u-tabs-swiper>
+		<view class="item" v-for="(item,index) in 20" :key="index">
+			<view class="wrap">
+				<u-swiper :list="list" height="300"></u-swiper>
+				<view class="wrap-item">
+					<u-row gutter="12">
+						<u-col span="8">
+							4居室 南卧 B区
+						</u-col>
+						<u-col span="4" style="color: red;">
+							800元/月
+						</u-col>
+						<u-col span="12" style="padding: 20rpx 0;">
+							户型南北通透，全全明格局，名厨名为，房子楼梯高楼层！采光好！小区环境好！价格合适。
+						</u-col>
+					</u-row>
+					<u-row gutter="12">
+						<u-col span="2">
+							<u-avatar src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1782192750,2489466674&fm=26&gp=0.jpg" mode="circle"></u-avatar>
+						</u-col>
+						<u-col span="7">
+							<view style="font-size: 30rpx;font-weight: bold;">
+								曾繁荣
+							</view>
+							<view style="color: #CCCCCC;font-size: 20rpx;">
+								房源信息找我咨询
+							</view>
+						</u-col>
+						<u-col span="3">
+							<u-icon size="40" style="padding: 20rpx;" name="chat-fill"></u-icon>
+							<u-icon size="40" style="padding: 10rpx;" name="phone-fill"></u-icon>
+						</u-col>
+					</u-row>
+				</view>
+			</view>
 		</view>
-		<swiper :current="swiperCurrent" @transition="transition" @animationfinish="animationfinish">
-			<swiper-item class="swiper-item" v-for="(item, index) in tabs" :key="index">
-				<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
-					<view class="item">
-						<u-swiper :list="listImg" height="300"></u-swiper>
-					</view>
-				</scroll-view>
-			</swiper-item>
-		</swiper>
 	</view>
 </template>
 
@@ -19,7 +42,7 @@
 	export default {
 		data() {
 			return {
-				listImg: [{
+				list: [{
 						image: 'https://cdn.uviewui.com/uview/swiper/1.jpg',
 						title: '昨夜星辰昨夜风，画楼西畔桂堂东'
 					},
@@ -32,45 +55,24 @@
 						title: '谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳'
 					}
 				],
-				list: [{
-					name: '看客'
-				}, {
-					name: '青春'
-				}],
-				tabs: ["eqqw", "dwad"],
-				// 因为内部的滑动机制限制，请将tabs组件和swiper组件的current用不同变量赋值
-				current: 0, // tabs组件的current值，表示当前活动的tab选项
-				swiperCurrent: 0, // swiper组件的current值，表示当前那个swiper-item是活动的
-			};
+			}
 		},
 		methods: {
-			// tabs通知swiper切换
-			tabsChange(index) {
-				this.swiperCurrent = index;
-			},
-			// swiper-item左右移动，通知tabs的滑块跟随移动
-			transition(e) {
-				let dx = e.detail.dx;
-				this.$refs.uTabs.setDx(dx);
-			},
-			// 由于swiper的内部机制问题，快速切换swiper不会触发dx的连续变化，需要在结束时重置状态
-			// swiper滑动结束，分别设置tabs和swiper的状态
-			animationfinish(e) {
-				let current = e.detail.current;
-				this.$refs.uTabs.setFinishCurrent(current);
-				this.swiperCurrent = current;
-				this.current = current;
-			},
-			// scroll-view到底部加载更多
-			onreachBottom() {
 
-			}
 		}
-	};
+	}
 </script>
 
 <style lang="less" scoped>
-.item{
-	padding: 0 30rpx;
-}
+	.item {
+		padding: 30rpx;
+
+		.wrap {
+			.wrap-item {
+				padding: 20rpx;
+				background-color: #FFFFFF;
+				box-shadow: 0px 0px 5px skyblue;
+			}
+		}
+	}
 </style>
